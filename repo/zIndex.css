@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* This is the blue flexbox */
+#blueBox {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  z-index: 1;
+}
+
+/* This is the black flexbox */
+#blackBox {
+  background-color: black;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  margin: 0px;
+  z-index: ;
+}
