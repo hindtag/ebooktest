@@ -1,43 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-/*  absolute layout */
-#all {
-  border: 1px solid black;
-  width: 800px;
-  height: 600px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+/* fixedRelative */ 
+
+body {
+  background-color: #fff9bf;
 }
 
-/* Header */
-#head {
-  border: 1px solid green;
-  position: absolute;
-  width: 800px;
-  height: 100px;
-  left: 0px;
-  top: 0px;
+h1 {
   text-align: center;
-} 
+}
 
 #menu {
-  border: 1px solid red;
-  position: absolute;
-  width: 140px;
-  height: 500px;
-  top: 100px;
-  left: 0px;
-  padding-left: 5;
-  padding-right: 5;
+  position: fixed;
+  width: 18%;
 }
 
-#content {
-  border: 1px solid blue;
-  position: absolute;
-  width: 645px;
-  height: 500px;
-  top: 100px;
-  left: 150px;
-  padding-left: 5;
+#menu li {
+  list-style-type: none;
+  margin-left: -2em;
+  text-align: center;
+}
+
+#menu a {
+  display: block;
+  border: 2px gray outset;
+  text-decoration: none;
+  color: black;
+}
+
+#menu a:hover {
+  color: whitesmoke;
+  background-color: black;
+  border: 2px gray inset;
+}
+
+#menu h2 {
+  text-align: center;
+}
+
+.content {
+  position: relative;
+  left: 20%;
+  width: 80%;
+}
+
+.content h2 {
+  border-top: 3px black double;
 }
