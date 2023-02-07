@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* fixedRelative */ 
+
+body {
+  background-color: #fff9bf;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form {
+  background-color: lightblue;
+}
+
+.input-container {
+  display: block;
+  border: none
+}
+
+.input-field {
+  width: 400px;
+  height: 30px;
+  margin: 10px;
+}
+
+.input-button {
+  padding: 0.5em
+}
