@@ -10,40 +10,16 @@ h1 {
   text-align: center;
 }
 
-#menu {
-  position: fixed;
-  width: 18%;
-}
-
-#menu li {
-  list-style-type: none;
-  margin-left: -2em;
-  text-align: center;
-}
-
-#menu a {
+form {
   display: block;
-  border: 2px gray outset;
-  text-decoration: none;
-  color: black;
-}
-
-#menu a:hover {
-  color: whitesmoke;
-  background-color: black;
-  border: 2px gray inset;
-}
-
-#menu h2 {
+  width: 500px;
+  margin: 0 auto;
   text-align: center;
+  text-align: left;
 }
 
-.content {
-  position: relative;
-  left: 20%;
-  width: 80%;
-}
-
-.content h2 {
-  border-top: 3px black double;
+.div {
+  display: flex;
+  justify-content: center;
+  text-align: left;
 }
