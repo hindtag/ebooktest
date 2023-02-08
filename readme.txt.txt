@@ -1,3 +1,4 @@
-This is for the ebook test coding experiments.
+Note:
 
-I am able to incorporate CSS and JS to HTML.
+JS pinoyfreecoder:
+    Continue on 17:22:00
