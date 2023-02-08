@@ -102,6 +102,7 @@ console.log(letPedroFavorites); // Output is Pedro favorite is english
  console.log(Contacts[1].fullName); // Output is Pedro Penduko Sr.
 */
 
+
 // || LOOPS
 
  // | For loop
@@ -195,26 +196,40 @@ console.log(letPedroFavorites); // Output is Pedro favorite is english
 
 // | MAP method
 
-/* const ContactsFullname = Contacts.map
-    (function(contact) {
-    return contact.fullName;
-});
+// const ContactsFullname = Contacts.map
+//     (function(contact) {
+//     return contact.fullName;
+// });
 
-console.log(ContactsFullname); // Output is array of fullname
+// console.log(ContactsFullname); // Output is array of fullname
 
-const ContactsOccupation = Contacts.map
-    (function(contact) {
-    return contact.Occupation;    
-});
+// const ContactsOccupation = Contacts.map
+//     (function(contact) {
+//     return contact.Occupation;    
+// });
 
-console.log(ContactsOccupation); // Output is array of Occupation using map method
+// console.log(ContactsOccupation); // Output is array of Occupation using map method
 
 // | Using filter on array objects using loop
 
-const ContactsPhone = Contacts.filter
-    (function(contact) {
+// const ContactsPhone = Contacts.filter
+//     (function(contact) {
 
-        return contact.isSaved == "Phone";
-    });
+//         return contact.isSaved == "Phone";
+//     }).map(function(contact){
+//         return contact.fullName;
+//     });
 
-console.log(ContactsPhone); */
+    // This is called connecting function.
+// console.log(ContactsPhone); // Explaination: You filter out the array object using the filter function for the phone then map out the full name to return the Full Name.
+
+// || JSON
+//  Api only provide an array objects formats.
+
+// const ContactsJSON = JSON.stringify
+//     (Contacts);
+
+// console.log(ContactsJSON);
+
+// End of loop
+
