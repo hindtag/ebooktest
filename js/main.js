@@ -233,3 +233,130 @@ console.log(letPedroFavorites); // Output is Pedro favorite is english
 
 // End of loop
 
+
+// || Start of CONDITIONALS
+// Example: output is Not 100
+/* const x = "100";
+
+if (x === 100) {
+    console.log("Its 100");
+}else{
+    console.log("Not 100");
+};
+
+// Another example: output is Value is greater than 100
+const xi = "500";
+
+if (xi === 100) {
+    console.log("Its 100");
+}else if (xi > 200){
+    console.log("Value is greater than 100");
+}else {
+    console.log("Not 100");
+};
+
+// Another example using double condition: output is It's 100
+
+const a = "500";
+
+if (a === 100 || a > 200) {
+    console.log("Its 100");
+}else {
+    console.log("Not 100");
+};
+
+End of conditionals */
+
+/* Start of function
+//  || FUNCTION TYPES
+// old function
+function GetSum(x, y){
+    return x + y;
+}
+
+console.log(GetSum(1,3));
+
+// arrow function
+
+const GetTotal = (x, y) => {
+    return x + y;
+}
+
+console.log(GetTotal(250, 250));
+
+// clean arrow function
+
+const TheTotal = (x, y) => x + y;
+
+console.log(TheTotal(250, 250));
+
+ End of function */
+
+
+//  || OOP 
+//constructor function
+// function Tao(firstName, lastName, bt){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.bt = bt;
+
+//         this.getFullName = () =>{
+//             return `${this.firstName} ${this.lastName}`; 
+//         };
+//     }
+
+
+// class 
+// class Tao {
+//     constructor(firstName, lastName, bt){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.bt = bt;
+//     }
+//     getFullName(){
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+
+// Instantiate object
+
+// const tao1 = new Tao('Pedro', 'Penduko', 'A');
+// const tao2 = new Tao('Nengneng', 'Banang', 'P');
+
+// console.log(tao1.firstName); // Output "Pedro"
+// console.log(tao1.getFullName()); // Output "Pedro Penduko"
+// console.log(tao2.getFullName()); // Output "Nengneng Banang"
+// console.log(tao2.lastName); // Output "Banang"
+
+// || DOM selection
+// const Form = document.getElementById('my-form');
+// const Form2 = document.querySelector(".my-form")
+
+// const Inputs = document.querySelectorAll(".form-element")
+
+// console.log(Inputs);
+
+
+// Inputs.forEach(function(input) {
+//     console.log(input);
+// });
+
+
+// DOM manipulation
+// const Form = document.getElementById('my-form');
+// const Form2 = document.querySelector(".my-form")
+// const Inputs = document.querySelectorAll(".form-element")
+
+// const ul = document.querySelector('.items')
+// ul.firstElementChild.textContent = "Continue learning"; // output string "continue learning"
+// ul.children[1].innerText = "Hoy"; // Output string hoy
+// ul.lastElementChild.innerHTML = "<h1>Big</h1>" // Output html Big
+
+// const btn = document.querySelector("#btn");
+// btn.style.background = "red";
+
+// DOM events
+const btn = document.querySelector("#btn");
+btn.addEventListener(function(e) {
+    
+})

@@ -9,10 +9,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    
-    <h1>javascript</h1>
-
+<body id="formlogin">
+    <div class="login-container">
+        <h2>Login Page</h2>
+        <br/>
+        <form action="" method="post" id="my-form">
+            <div class="form-element" >
+                <label class="label" >Username</label>
+                <input class="input" type="text" name="username" id="username" autocomplete="off" placeholder="Enter Username" required>
+            </div>
+            <div class="form-element" >
+                <label class="label" >Password</label>
+                <input class="input" type="text" name="password" id="password" placeholder="Enter Password" required>
+            </div>
+            <div>
+            <button type="submit" value="Login" class="btn" id="btn">Login</button>
+            </div>
+        </form>
+        <div class="form-element">
+        <ul class="items">
+            <li class="item">Value1</li>
+            <li class="item">Value2</li>
+            <li class="item">Value3</li>
+        </ul>
+        </div>
+    </div>
     <script src="/js/main.js"></script>
 </body>
 
