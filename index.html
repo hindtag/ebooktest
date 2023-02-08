@@ -9,32 +9,36 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body id="formlogin">
-    <div class="login-container">
-        <h2>Login Page</h2>
-        <br/>
-        <div id="msg"></div>
-        <form action="" method="post" id="myform">
-            <div class="form-element" >
-                <label class="label" >Username</label>
-                <input class="input" type="text" name="username" id="username" autocomplete="off" placeholder="Enter Username" required>
-            </div>
-            <div class="form-element" >
-                <label class="label" >Password</label>
-                <input class="input" type="text" name="password" id="password" placeholder="Enter Password" required>
-            </div>
-            <div>
-            <button type="submit" value="Login" class="btn" id="btn">Login</button>
-            </div>
+<body>
+    
+    <header class="container">
+    <h1>Text Input Devices</h1>
+    <div class="form-container">
+        <form action = "">
+            <fieldset>
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="txtNormal" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="pwd" class="form-control">
+          </div>
+          <div class="form-group">
+            <label>Hidden:</label>
+            <input type="hidden" id="hidden" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="txtArea" class="form-control">This is a big text area.</textarea>
+          </div>
+          <button type="button" onclick="processForm()" class="btn btn-primary">Click Me</button>
+        </fieldset>
         </form>
-        <div class="form-element">
-        <ul class="items">
-            <li class="item">Value1</li>
-            <li class="item">Value2</li>
-            <li class="item">Value3</li>
-        </ul>
-        </div>
-    </div>
+
+      </div>
+    </header>
+    <div class="output" id="output"></div>
     <script src="/js/main.js"></script>
 </body>
 
