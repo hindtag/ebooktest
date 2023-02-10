@@ -1,33 +1,26 @@
-function processForm(){
-// Grab input from form
-var txtNormal = document.getElementById("txtNormal");
-var pwd = document.getElementById("pwd");
-var hidden = document.getElementById("hidden");
-var txtArea = document.getElementById("txtArea");
+var output;
 
-var normal = txtNormal.value;
-var password = pwd.value;
-var secret = hidden.value;
-var bigText = txtArea.value;
+function init() {
+    output = document.getElementById("output");
+};
 
-// Create Output
-var result = "";
-result += "<dl> \n";
-result += "<dt>normal</dt> \n";
-result += "<dd>" + normal + "</dd> \n";
-result += " \n";
-result += "<dt>password</dt> \n";
-result += "<dd>" + password + "</dd> \n";
-result += " \n";
-result += "<dt>secret</dt> \n";
-result += "<dd>" + secret + "</dd> \n";
-result += " \n";
-result += "<dt>bigtext</dt> \n";
-result += "<dd>" + bigText + "</dd> \n";
-result += "<dl> \n";
+function count() {
+    output.innerHTML = "";
+    for (i = 1; i <=10; i++){
+        output.innerHTML += i + "<br />"
+    }
+}
 
+function back() {
+    output.innerHTML = "";
+    for (i = 10; i > 0; i--){
+        output.innerHTML += i + "<br />"
+    }
+}
 
-console.log(output);
-var output = document.getElementById("output");
-output.innerHTML = result;
+function byFive() {
+    output.innerHTML = "";
+    for (i = 5; i <=50; i += 5){
+        output.innerHTML += i + "<br />"
+    }
 }

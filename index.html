@@ -9,32 +9,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-    <div class="login-container">
-      <h1>Login Page</h1>
-      <br>
-      <div class="form-logo">
-      </div>
-    <form action="" method="post">
-        <div class="form-element">
-          <label for="">Username</label>
-          <input type="text" name="username" id="username" autocomplete="off" placeholder="Enter Username" required>
-        </div>  
-
-        <div class="form-element">
-          <label for="">Password</label>
-          <input type="password" name="password" id="password" autocomplete="off" placeholder="Enter Password" required>
-        </div>
-
-        <div class="form-element">
-          <label for="">Comment</label>
-          <textarea name="comment" id="" cols="30" rows="10"></textarea>
-        </div>
-
-
-        <button type="submit" name="login">Login</button>
+<body onload = "init()">
+  <h1>For loops</h1>
+    <form action="">
+      <fieldset>
+        <button type="button" onclick="count()" >Count to ten</button>
+        <button type="button" onclick="back()" >Count backwards</button>
+        <button type="button" onclick="byFive()" >count by fives</button>
+      </fieldset>
     </form>
-    </div>
+  
+    <div id="output">Click a button to see some counting...</div>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

@@ -5,18 +5,12 @@
   box-sizing: border-box;
 }
 
-/* || VARIABLE */
-/* Create variable here */
-
+/* The body is on a center
+has 0 margin on top and bottom and auto on left and right
+*/
 
 body {
   font-family: "Nunito";
-}
-
-/* The div with class of .login-container
-has 0 margin on top and bottom and auto on left and right
-*/
-.login-container {
   margin: 0 auto;
   width: 30%;
   margin-top: 8vh;
@@ -28,44 +22,4 @@ has 0 margin on top and bottom and auto on left and right
   box-shadow: 5px 6px 18px #888;
 }
 
-.form-element {
-  width: 100%;
-}
 
-.login-container h1 {
-  text-align: center;
-}
-
-.form-element label {
-  display: block;
-  font-size: 22px;
-  margin-top: 1rem;
-}
-
-.form-element input,[type=text],
-.form-element input,[type=password],
-.form-element textarea {
-  font-size: 22px;
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: #888;
-}
-
-.login-container button {
-  width: 100%;
-  letter-spacing: 6px;
-  border-radius: 4px;
-  margin-top: 2rem;
-  font-size: 32px;
-  padding: 1rem;
-  background-color: rgb(2, 110, 165);
-  border: none;
-  color: whitesmoke;
-  cursor: pointer;
-}
-
-.login-container button:hover {
-  background-color: rgb(50, 143, 218);
-}
