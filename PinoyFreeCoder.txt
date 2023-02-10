@@ -1,7 +1,7 @@
 Note:
 
 JS pinoyfreecoder:
-    Continue on 1:00:00
+    Done
 
     Resources:
         Gradient css generator

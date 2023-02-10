@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* The body is on a center
+has 0 margin on top and bottom and auto on left and right
+*/
+
+body {
+  font-family: "Nunito";
+  margin: 0 auto;
+  width: 30%;
+  margin-top: 8vh;
+  margin-bottom: 20vh;
+  background-color: whitesmoke;
+  border: 1px solid gray;
+  height: auto;
+  padding: 2rem;
+  box-shadow: 5px 6px 18px #888;
+}
+
+
