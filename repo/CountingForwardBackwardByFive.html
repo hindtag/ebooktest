@@ -9,20 +9,18 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
-  <header>
-    <h1>While Loop Demo</h1>
-  </header>
-  <main>
-    <p>The password is 'HTML5'</p>
+<body onload = "init()">
+  <h1>For loops</h1>
     <form action="">
       <fieldset>
-        <button type="button" onclick="getPassword()">Guess the password</button>
-        <button type="button" onclick="threeTries()">Guess the password in three tries</button>
+        <button type="button" onclick="count()" >Count to ten</button>
+        <button type="button" onclick="back()" >Count backwards</button>
+        <button type="button" onclick="byFive()" >count by fives</button>
       </fieldset>
     </form>
-  </main>
+  
+    <div id="output">Click a button to see some counting...</div>
+    <script src="/js/main.js"></script>
 </body>
-<script src="/js/main.js"></script>
 
 </html>
