@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick javascript code</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+  <header>
+    <h1>Hide Paragraph Demo</h1>
+  </header>
+  <main>
+    <section>
+      <p id="graf1">1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, distinctio alias? Ad, facilis quidem quisquam porro sunt earum. Quod, ut cum officiis inventore omnis quibusdam?</p>
+      
+      <p id="graf2">2. Veniam recusandae esse id vitae minus amet perspiciatis totam eos unde? Neque at officia odit, magnam dignissimos vero amet corrupti dicta ad, quisquam alias ullam?</p>
+      
+      <p id="graf3">3. Amet esse voluptate inventore sunt corrupti quas, ratione dicta similique nostrum nulla? Ipsam consequuntur beatae id ipsa, dolorem atque, repellat deserunt libero, quod minus recusandae!</p>
+    </section>
+    <section>
+      <h2>You can choose to display or hide paraghraphs on this page dynamically using the checkboxes below. You can also choose to change paragraph #3</h2>
+        <form name="myForm">
+          <fieldset>
+            <input type="checkbox" name="graf1box" checked onClick="displayText();"> Display first paragraph <br>
+            <input type="checkbox" name="graf2box" checked onClick="displayText();"> Display second paragraph <br> <br>
+            Change third paragraph.
+            <br>
+            <div class="input-form">
+            <input type="text" name="changeableText" defaultValue="Type here" size="30">
+            <input type="button" value="Click to change text" onclick="changeText();">
+            </div>
+          </fieldset>
+      </form>
+    </section>
+  </main>
+</body>
+<script src="/js/main2.js"></script>
+
+</html>
