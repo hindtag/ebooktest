@@ -1,5 +1,5 @@
 function getPassword() {
-    var correct = "HTML5";
+    var correct "HTML5";
     var guess = "";
 
     while (guess != correct){
@@ -7,3 +7,4 @@ function getPassword() {
     }
     alert ("You may proceed")
 }
+
