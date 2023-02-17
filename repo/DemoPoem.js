@@ -1,6 +1,6 @@
 // This is a HTML-CSS-JS code
 // This is a song DEMO using array and function
-/* 
+
 let distractionList = Array("", "Suck his thumb", "Tie his shoe", "Climb a tree", "Shut the door");
 
 const makeSong = () => { // convert into arrow function
