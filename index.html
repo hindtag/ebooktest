@@ -1,41 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quick HTML-CSS-JS code</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick HTML-CSS-JS code</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-<form action="">
-  <header>
-    <h1>DEMO Multiple Selection</h1>
-  </header>
-    <fieldset>
-      <label>
-        Select the language(s) you know
-        CTRL + Click to select multiple lines
-      </label>
-      <br>
-      <select name="" id="selLanguage" multiple="multiple" size="7">
-        <option value="HTML">HTML</option>
-        <option value="CSS">CSS</option>
-        <option value="Javascript">Javascript</option>
-        <option value="PHP">PHP</option>
-        <option value="MySQL">MySQL</option>
-        <option value="Java">Java</option>
-        <option value="Python">Python</option>
-      </select>
-        <button type="button" onclick="showChoices()">Submit</button>
-    </fieldset>
-</form>
-  <main>
-      <p id="output"></p>
-  </main>
-</body>
-<script src="/js/main.js"></script>
-
+	<body onload="init()">
+		<h1>Keyboard Motion Demo</h1>
+		<img class="hidden" id="bird" src="./img/bird.png" alt="volcano pic" />
+		<h2>Player name:</h2>
+		<h3>Bird</h3>
+		<canvas id="drawing" height="200" width="200">
+			<p>Canvas not supported</p>
+		</canvas>
+		<br />
+		<p>Use arrow keys to move image, space bar to stop motion</p>
+	</body>
+	<script src="/js/main.js"></script>
 </html>
