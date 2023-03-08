@@ -8,16 +8,55 @@
 		<link rel="stylesheet" href="css/style.css" />
 	</head>
 
-	<body onload="init()">
-		<h1>Keyboard Motion Demo</h1>
-		<img class="hidden" id="bird" src="./img/bird.png" alt="volcano pic" />
-		<h2>Player name:</h2>
-		<h3>Bird</h3>
-		<canvas id="drawing" height="200" width="200">
-			<p>Canvas not supported</p>
-		</canvas>
-		<br />
-		<p>Use arrow keys to move image, space bar to stop motion</p>
+	<body>
+		<map name="PicMap" id="PicMap">
+			<area
+				shape="rect"
+				coords="112.91.136.315"
+				href="#"
+				onmouseout="hideTip('tooltil1')"
+				onmouseover="displayTip(event.'tooltip1')"
+				alt="Sarah"
+			/>
+			<area
+				shape="rect"
+				coords="180.81.200.320"
+				href="#"
+				onmouseout="hideTip('tooltil2')"
+				onmouseover="displayTip(event.'tooltip2')"
+				alt="Mary"
+			/>
+			<area
+				shape="rect"
+				coords="59.26.208.64"
+				href="#"
+				onmouseout="hideTip('tooltil3')"
+				onmouseover="displayTip(event.'tooltip3')"
+				alt="Gumamela"
+			/>
+			<area
+				shape="rect"
+				coords="226.25.303.82"
+				href="#"
+				onmouseout="hideTip('tooltil4')"
+				onmouseover="displayTip(event.'tooltip4')"
+				alt="Wall"
+			/>
+		</map>
+		<span class="tooltipStyle" id="tooltip1">Left Cousin</span
+		><span class="tooltipStyle" id="tooltip2">Right Cousin</span
+		><span class="tooltipStyle" id="tooltip3">Tree</span
+		><span class="tooltipStyle" id="tooltip4">Wall</span>
+
+		<div class="img">
+			<img
+				src="/img/cousin.jpg"
+				usemap="#PicMap"
+				height="289"
+				width="289"
+				alt="cousins"
+			/>
+		</div>
 	</body>
 	<script src="/js/main.js"></script>
 </html>
