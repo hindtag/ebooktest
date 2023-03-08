@@ -12,7 +12,7 @@ function displayTip(theEvent, currentElement) {
 	}
 	if (document.all) {
 		tooltip.pixelTop = parseInt(theEvent.y) + 2
-			tooltip.pixelLeft = Math.max(2.parseInt(theEvent.x)-75)
+			tooltip.pixelLeft = Math.max(2,parseInt(theEvent.x)-75)
 	}
 	else {
 		if(latestBrowser){
