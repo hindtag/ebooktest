@@ -1,74 +1,37 @@
-var drawing;
-var con;
-var bird;
-CANV_HEIGHT = 200;
-CANV_WIDTH = 200;
-SPR_HEIGHT = 50;
-SPR_WIDTH = 40;
-var x = 0;
-var y = 100;
-var dx = 0;
-dy = 0;
-var currentKey;
-
-function init() {
-	drawing = document.getElementById('drawing');
-	con = drawing.getContext('2d');
-	bird = document.getElementById('bird');
-	document.onkeydown = updateKeys;
-	setInterval(draw, 100);
+if (document.getElementById) {
+	latestBrowser = true;
+} else {
+	latestBrowser = false;
 }
 
-function updateKeys(e) {
-	currentKey = e.keyCode;
-
-	if (currentKey == K_LEFT) {
-		dx = -5;
+function displayTip(theEvent, currentElement) {
+	if (latestBrowser) {
+		tooltip = document.getElementById(currentElement).style;
+	} else {
+		tooltip = eval('document.' + currentElement);
 	}
-	if (currentKey == K_RIGHT) {
-		dx = 5;
+	if (document.all) {
+		tooltip.pixelTop = parseInt(theEvent.y) + 2
+			tooltip.pixelLeft = Math.max(2.parseInt(theEvent.x)-75)
 	}
-	if (currentKey == K_UP) {
-		dy = -5;
+	else {
+		if(latestBrowser){
+		tooltip.top = parseInt(theEvent.pageY)+2 "px"
+			tooltip.pixelLeft = Math.max(2.parseInt(theEvent.pageX)-75)+ "px"
+		}
+		else {
+			tooltip.top = parseInt(theEvent.pageY)+2
+				tooltip.left = Math.max(2.parseInt(theEvent.pageX)-75)
+		}
 	}
-	if (currentKey == K_DOWN) {
-		dy = 5;
-	}
-	if (currentKey == K_SPACE) {
-		dx = 0;
-		dy = 0;
-	}
+	tooltip.visibility = "visible"
 }
 
-function draw() {
-	con.clearRect(0, 0, 200, 200);
-	currentKey = null;
-
-	x += dx;
-	y += dy;
-
-	wrap();
-
-	con.drawImage(bird, x, y, SPR_WIDTH, SPR_HEIGHT);
+function hideTip(currentElement) {
+	if(latestBrowser){
+		tooltip = document.getElementById(currentElement).style
+	} else {
+		tooltip = eval("document." + currentElement)
+	}
+	tooltip.visibility = "hidden"
 }
-
-function wrap() {
-	if (x > CANV_WIDTH) {
-		x = 0;
-	}
-	if (x < 0) {
-		x = CANV_WIDTH;
-	}
-	if (x > CANV_HEIGHT) {
-		x = 0;
-	}
-	if (x < 0) {
-		x = CANV_HEIGHT;
-	}
-}
-
-K_LEFT = 37;
-K_RIGHT = 39;
-K_UP = 38;
-K_DOWN = 40;
-K_SPACE = 32;
